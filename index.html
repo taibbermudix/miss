@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Me</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="clickButton" onclick="showMessage()">Click Me</button>
+    <p id="message" style="display: none;"></p>
+
+    <script>
+        function showMessage() {
+            const messageElement = document.getElementById('message');
+            const buttonElement = document.getElementById('clickButton');
+            buttonElement.style.display = 'none'; // Hide the button
+            messageElement.textContent = 'khti douae tw7chtk :(';
+            messageElement.style.display = 'block'; // Show the message
+        }
+    </script>
+
+</body>
+</html>
